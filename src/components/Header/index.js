@@ -5,7 +5,13 @@ const Header = () => {
 
   return (
     <Container>
-      <h1>Header</h1>
+      <header>
+        <a href="/">Eduardo Moreira</a>
+
+        <p>Menu</p>
+      </header>
+      
+      
     </Container>
   );
 }
