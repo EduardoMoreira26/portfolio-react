@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
+
 import { ModalBackground, ModalArea } from './styles';
 
 const Modal = (props) => {
 
-  const handleBackroundClick = () => {
-    props.setVisible(false);
+  const handleBackroundClick = (event) => {
+    if(event.target === event.currentTarget) {
+      props.setVisible(false);
+
+    }
   }
 
   return (
