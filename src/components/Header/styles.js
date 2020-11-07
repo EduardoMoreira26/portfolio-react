@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   padding: 20px 10px;
-  background: #f344;
 
   a {
     text-decoration: none;
@@ -11,11 +10,13 @@ export const Container = styled.header`
   }
 
   header {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-
 `;
+
 
