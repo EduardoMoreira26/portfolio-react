@@ -11,12 +11,17 @@ const Modal = (props) => {
     }
   }
 
+
   return (
     <>
+      
       {props.visible  &&
         <ModalBackground onClick={handleBackroundClick}>
         <ModalArea>
+      
           {props.children}
+          
+          
         </ModalArea>
       </ModalBackground>
     }
