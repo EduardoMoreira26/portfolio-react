@@ -140,6 +140,8 @@ export const Modal = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  
 `;
 
 export const ModalArea = styled.div`
@@ -196,19 +198,70 @@ export const ModalArea = styled.div`
     }
   }
   @media (max-width: 700px) {
-    width: 400px;
-    p {
-      line-height: 20px;
-      font-size: 14px;
+    height: 90vh;
+    width: 350px;
+  
+    padding: 0;
+      p {
+        line-height: 20px;
+        font-size: 14px;
+      }
+      .imgs {
+        img {
+          width: 380px;
+          height: 230px;
+          padding: 0;
+        }
+      }
+      .description {
+        width: 300px;
+      }
+  }
+`;
+
+export const Skills = styled.section`
+   
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    strong {
+      color: #5f5f5f;
+      font-style: italic;
+      margin-bottom: 20px;
     }
-    .imgs {
-      img {
-        width: 400px;
-        height: 300px;
+    .skills {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding-top: 40px;
+      .devicon-docker-plain,
+      .devicon-css3-plain,
+      .devicon-bootstrap-plain,
+      .devicon-express-original,
+      .devicon-html5-plain,
+      .devicon-javascript-plain,
+      .devicon-nodejs-plain,
+      .devicon-react-original,
+      .devicon-typescript-plain {
+        font-size: 6em;
+      }
+      h2 {
+        color: #5f5f5f;
+        margin: 20px 0;
+      }
+      p {
+        color: #e1e1e6;
+        line-height: 25px;
       }
     }
-    .description {
-      width: 300px;
-    }
-  }
+  
+
+`;
+
+export const Card = styled.div`
+  width: 400px;
+  height: 200px;
+  text-align: center;
 `;
