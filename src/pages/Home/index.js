@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+
+
 import { FiXCircle, FiLinkedin, FiGithub } from "react-icons/fi";
 
 import Header from '../../components/Header';
@@ -11,17 +13,8 @@ import olxcard from "../../assets/olxcard.png";
 import olxbg2 from "../../assets/olxbg2.png";
 
 const Home = () => {
-  const [modalVisible, setModalVisible] = useState(false)
+const [modalVisible, setModalVisible] = useState(false)
 
-  const handleButtonClick = () => {
-    setModalVisible(true);
-  }
-
-  const handleButtonClose = () => {
-    setModalVisible(false);
-  }
-
-  
 
   return (
     <>
@@ -44,11 +37,11 @@ const Home = () => {
 
             <section className="projects_container">
               <div className="background-card">
-                <button onClick={handleButtonClick} className="card">
+                <button onClick={() => setModalVisible(true)} className="card">
                   <div className="effect-closed">
                     <img src={olxcard} alt="" />
-                    <h2>OLX Clone</h2>
-                    <p>ReactJs</p>
+                    <h2>jujujuj</h2>
+                    <p>jujujuj</p>
                   </div>
                 </button>
 
@@ -56,7 +49,7 @@ const Home = () => {
                   <Modal visible={modalVisible} setVisible={setModalVisible}>
                     <ModalArea>
                       <div className="close-button">
-                        <FiXCircle onClick={handleButtonClose} size={44} />
+                        <FiXCircle onClick={() => setModalVisible(false)} size={44} />
                       </div>
                       <h1>OLX CLONE</h1>
 
@@ -82,7 +75,7 @@ const Home = () => {
               </div>
 
               <div className="background-card">
-                <button onClick={handleButtonClick} className="card">
+                <button onClick={() => setModalVisible(true)} className="card">
                   <div className="effect-closed">
                     <img src={olxcard} alt="" />
                     <h2>Ecoleta</h2>
@@ -91,10 +84,13 @@ const Home = () => {
                 </button>
 
                 {modalVisible && (
-                  <Modal visible={modalVisible} setVisible={setModalVisible}>
+                  <Modal 
+                    visible={modalVisible} 
+                    setVisible={setModalVisible}
+                    >
                     <ModalArea>
                       <div className="close-button">
-                        <FiXCircle onClick={handleButtonClose} size={44} />
+                        <FiXCircle onClick={() => setModalVisible(false)} size={44} />
                       </div>
                       <h1>Ecoleta</h1>
 
@@ -104,7 +100,7 @@ const Home = () => {
 
                       <div className="description">
                         <p>
-                          Criado
+                         ihuvtfctfctfctfct
                         </p>
                         <br />
                         <a

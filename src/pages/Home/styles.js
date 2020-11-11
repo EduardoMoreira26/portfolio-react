@@ -224,6 +224,15 @@ export const Skills = styled.section`
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+
+    h1 {
+    margin: 40px 10px 0 0;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
     strong {
       color: #5f5f5f;
       font-style: italic;
@@ -255,9 +264,32 @@ export const Skills = styled.section`
         color: #e1e1e6;
         line-height: 25px;
       }
-    }
-  
 
+  }
+
+  @media (max-width: 700px) {
+    
+    margin: 0;
+
+
+
+
+    .skills {
+      margin: 0;
+      padding-top: 40px;
+      .devicon-docker-plain,
+      .devicon-css3-plain,
+      .devicon-bootstrap-plain,
+      .devicon-express-original,
+      .devicon-html5-plain,
+      .devicon-javascript-plain,
+      .devicon-nodejs-plain,
+      .devicon-react-original,
+      .devicon-typescript-plain {
+        font-size: 3em;
+      }
+    }
+  }
 `;
 
 export const Card = styled.div`
