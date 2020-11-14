@@ -4,12 +4,28 @@ import background from "../../assets/background.png";
 
 export const Container = styled.div`
   max-width: 100%;
+
+
 `;
 
 export const Content = styled.div`
   button {
     cursor: pointer;
   }
+
+  h1 {
+    margin: 20px 10px 0 0;
+    font-size: 36px;
+    
+    &:after {
+          content: "";
+          display: block;
+          background: #fff;
+          height: 3px;
+          width: 20px;
+          margin: 8px auto;
+        }
+    }
 
   .intro {
     background: url(${background}) no-repeat center;
@@ -43,9 +59,7 @@ export const Content = styled.div`
     h1 {
     margin: 20px 10px 0 0;
     font-size: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     }
     strong {
       color: #5f5f5f;
@@ -127,6 +141,81 @@ export const Content = styled.div`
         }
     }
   }
+
+  .section_cursos {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+
+    @media (max-width: 700px) {
+      margin: 10px;
+    }
+  }
+
+  .contact_container {
+    background: #1f1f1f;
+    margin-top: 20px;
+    padding: 60px 0;
+
+    .container_card {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      .contact_card {
+        border: 1px solid #fff;
+        height: 200px;
+        width: 360px;
+        text-align: center;
+        padding: 40px 0;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #121214;
+        background: #121214;
+        box-shadow: 0 0 0 2px #000;
+
+        h2::after {
+          content: "";
+          display: block;
+          background: #fff;
+          height: 3px;
+          width: 20px;
+          margin: 8px auto;
+        }
+
+        a {
+          text-decoration: none;
+          color: #5f5f5f;
+
+          .devicon-github-plain,
+          .devicon-linkedin-plain {
+            font-size: 3em;
+            transition: color 0.2s;
+            margin-right: 10px;
+            color: #81c043;
+
+            &:hover {
+              color: #81c033;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 700px) {
+      background: #1f1f1f;
+      margin-top: 0;
+      padding: 0;
+
+      .container_card {
+        padding: 20px;
+
+      }
+    }
+  }
+  
 `;
 
 export const Modal = styled.div`
@@ -144,80 +233,80 @@ export const Modal = styled.div`
   
 `;
 
-export const ModalArea = styled.div`
-  height: 90vh;
-  width: 1200px;
-  overflow-y: auto;
-  padding: 20px;
-  a {
-    text-decoration: none;
-    color: #81c043;
-    transition: color 0.2s;
-    &:hover {
-      color: #6ba036;
-    }
-  }
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #121214;
-    border-radius: 10px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    box-shadow: inset 0 0 2px #81c043;
-  }
-  background: #1f1f1f;
-  border-radius: 5px;
-  .description {
-    width: 900px;
-    margin: 0 auto;
-    p {
-      line-height: 30px;
-    }
-  }
-  .close-button {
-    display: flex;
-    justify-content: flex-end;
-    transition: color 0.2s;
-    cursor: pointer;
-    &:hover {
-      color: #81c043;
-    }
-  }
-  .imgs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    img {
-      width: 1100px;
-      height: 500px;
-      padding: 10px;
-      border-radius: 2px;
-    }
-  }
-  @media (max-width: 700px) {
-    height: 90vh;
-    width: 350px;
+// export const ModalArea = styled.div`
+//   /* height: 90vh;
+//   width: 1200px;
+//   overflow-y: auto;
+//   padding: 20px;
+//   a {
+//     text-decoration: none;
+//     color: #81c043;
+//     transition: color 0.2s;
+//     &:hover {
+//       color: #6ba036;
+//     }
+//   }
+//   ::-webkit-scrollbar {
+//     width: 10px;
+//   }
+//   ::-webkit-scrollbar-thumb {
+//     background: #121214;
+//     border-radius: 10px;
+//   }
+//   ::-webkit-scrollbar-thumb:hover {
+//     box-shadow: inset 0 0 2px #81c043;
+//   }
+//   background: #1f1f1f;
+//   border-radius: 5px;
+//   .description {
+//     width: 900px;
+//     margin: 0 auto;
+//     p {
+//       line-height: 30px;
+//     }
+//   }
+//   .close-button {
+//     display: flex;
+//     justify-content: flex-end;
+//     transition: color 0.2s;
+//     cursor: pointer;
+//     &:hover {
+//       color: #81c043;
+//     }
+//   }
+//   .imgs {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     align-items: center;
+//     img {
+//       width: 1100px;
+//       height: 500px;
+//       padding: 10px;
+//       border-radius: 2px;
+//     }
+//   }
+//   @media (max-width: 700px) {
+//     height: 90vh;
+//     width: 350px;
   
-    padding: 0;
-      p {
-        line-height: 20px;
-        font-size: 14px;
-      }
-      .imgs {
-        img {
-          width: 380px;
-          height: 230px;
-          padding: 0;
-        }
-      }
-      .description {
-        width: 300px;
-      }
-  }
-`;
+//     padding: 0;
+//       p {
+//         line-height: 20px;
+//         font-size: 14px;
+//       }
+//       .imgs {
+//         img {
+//           width: 380px;
+//           height: 230px;
+//           padding: 0;
+//         }
+//       }
+//       .description {
+//         width: 300px;
+//       }
+//   } */
+// `;
 
 export const Skills = styled.section`
    
@@ -228,15 +317,13 @@ export const Skills = styled.section`
     h1 {
     margin: 40px 10px 0 0;
     font-size: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ 
     }
 
     strong {
       color: #5f5f5f;
       font-style: italic;
-      margin-bottom: 20px;
+      margin: 0 20px 10px 10px;
     }
     .skills {
       display: flex;
@@ -290,10 +377,80 @@ export const Skills = styled.section`
       }
     }
   }
+
+  
 `;
 
 export const Card = styled.div`
-  width: 400px;
+  width: 600px;
   height: 200px;
   text-align: center;
 `;
+
+export const CardCursos = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  height: 300px;
+  border-radius: 5px;
+  background: #121214;
+  border: 3px solid #000; 
+
+  
+
+  &:nth-child(-n+4):after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 40px;
+    background: #000;
+    margin-top: 340px;
+    position: absolute;
+  }
+
+
+  .infoCursos {
+    width: 600px;
+    margin: 0 auto;
+    
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+
+  }
+
+  h2 {
+    color: #5f5f5f;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 700px) {
+    margin-bottom: 40px;
+    margin-top: 0;
+    margin-right:  10px;
+    margin-left:  10px;
+
+    .infoCursos {
+    width: 280px;
+    text-align: center;
+    font-size: 14px;
+
+    img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 40px;
+    padding-left: 10px;
+    background: #e44;
+        }
+    
+    }
+  }
+
+  
+`;
+
