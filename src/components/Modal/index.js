@@ -2,14 +2,22 @@ import React from 'react';
 
 import { Container, ModalBody } from './styles';
 
-const Modal = () => {
+const Modal = ({ setStatus, status, children }) => {
 
-  
+  const handleModalClick = (e) => {
+    if (e.target.classList.contains('modalBg')) {
+      setStatus(false);
+    };
+  };
   
   return (
-    <Container>
+    <Container 
+      className='modalBg'
+      status={status} 
+      onClick={handleModalClick}
+    >
       <ModalBody>
-        ...
+        {children}
       </ModalBody>
     </Container>
   );

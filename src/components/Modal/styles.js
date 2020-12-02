@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  display: ${props => props.status ? 'flex' : 'none'};
   position: fixed;
   left: 0;
   top: 0;
@@ -8,13 +9,24 @@ export const Container = styled.div`
   bottom: 0;
   z-index: 900;
   background: rgba(0, 0, 0, 0.7);
-  display: flex;
   align-items: center;
   justify-content: center;
 `;
 
 export const ModalBody = styled.div`
-  width: 300px;
-  height: 300px;
   background-color: #fff;
+  max-height: 90vh;
+  max-width: 95vw;
+  overflow: auto;
+
+  ::-webkit-scrollbar {
+     width: 10px;
+   }
+   ::-webkit-scrollbar-thumb {
+   background: #121214;
+     border-radius: 10px;
+   }
+   ::-webkit-scrollbar-thumb:hover {
+     box-shadow: inset 0 0 2px #81c043;
+ }
 `;

@@ -1,8 +1,8 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export  default [
 {
-   title: 'Olx Clone',
-  //  img: {olxbg2},
+     title: 'Olx Clone',
+     img: '../../assets/courses-origamid.svg',
      description: "Projeto criado com intuito de estudos",
      url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
      site: "https://edumoreiradev.netlify.app/",
@@ -10,7 +10,7 @@ export  default [
    },
    {
      title: 'Ecoleta',
-    //  img: {olxbg2},
+     img: '../../assets/courses-origamid.svg',
      description: "Ecoleta criado na NLW",
      url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
      site: "https://edumoreiradev.netlify.app/",
@@ -18,7 +18,7 @@ export  default [
    },
    {
      title: 'GitHub Explorer',
-    //  img: {olxbg2},
+     img: '../../assets/courses-origamid.svg',
      description: "Aplicação criada no Bootcamp da rocketseat",
      url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
      site: "https://edumoreiradev.netlify.app/",

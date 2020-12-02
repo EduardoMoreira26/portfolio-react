@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -9,6 +9,13 @@ import { Container, Content, Skills, Card, ContactContainer } from './styles';
 import olxcard from "../../assets/olxcard.png";
 
 const Home = () => {
+
+  const [portfolio, setPortfolio] = useState([]);
+  const [modalStatus, setModalStatus] = useState(false);
+
+  useEffect(() => {
+    
+  }, []);
 
   return (
 
@@ -29,8 +36,14 @@ const Home = () => {
               </strong>
             </div>
 
-            <Modal>
+
+
+            <Modal 
+              status={modalStatus}
+              setStatus={setModalStatus}
+            >
               Conteudo do Modal
+
             </Modal>
 
 
