@@ -4,8 +4,6 @@ import background from "../../assets/background.png";
 
 export const Container = styled.div`
   max-width: 100%;
-
-
 `;
 
 export const Content = styled.div`
@@ -152,7 +150,13 @@ export const Content = styled.div`
     }
   }
 
-  .contact_container {
+  
+  
+  
+`;
+
+export const ContactContainer = styled.section`
+  
     background: #1f1f1f;
     margin-top: 20px;
     padding: 60px 0;
@@ -204,6 +208,7 @@ export const Content = styled.div`
         }
       }
     }
+
     @media (max-width: 700px) {
       background: #1f1f1f;
       margin-top: 0;
@@ -214,8 +219,6 @@ export const Content = styled.div`
 
       }
     }
-  }
-  
 `;
 
 export const Modal = styled.div`

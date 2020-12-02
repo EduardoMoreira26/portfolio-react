@@ -19,11 +19,11 @@ const Header = () => {
         <a href="/">Eduardo Moreira</a>
 
 
-        <Hamburger color="#81c043" onClick={handleButtonClick} toggled={modalVisible} toggle={setModalVisible} />
+        {/* <Hamburger color="#81c043" onClick={handleButtonClick} toggled={modalVisible} toggle={setModalVisible} />
 
         <Modal visible={modalVisible} setVisible={setModalVisible}>
           <h1>Testando 123</h1>
-        </Modal>
+        </Modal> */}
       </header>
     </Container>
   );
