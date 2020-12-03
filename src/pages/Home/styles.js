@@ -68,15 +68,7 @@ export const Content = styled.div`
     }
   }
 
-  .projects_container {
-    max-width: 1200px;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    background: #1f1f1f;
-    border-radius: 5px;
-    
-  }
+  
 
   .background-card {
       display: flex;
@@ -149,11 +141,20 @@ export const Content = styled.div`
       margin: 10px;
     }
   }
+`;
 
+export const PortfolioArea = styled.div`
   
-  
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: #1f1f1f;
+    border-radius: 5px;
+    
   
 `;
+
 
 export const ContactContainer = styled.section`
   

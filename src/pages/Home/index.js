@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
+import data from '../../components/App/data';
+
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Modal from '../../components/Modal';
+import PortfolioItem from '../../components/PortfolioItem';
 
-import { Container, Content, Skills, Card, ContactContainer } from './styles';
+import { Container, Content, Skills, Card, ContactContainer, PortfolioArea } from './styles';
 
 import olxcard from "../../assets/olxcard.png";
 
@@ -13,8 +16,10 @@ const Home = () => {
   const [portfolio, setPortfolio] = useState([]);
   const [modalStatus, setModalStatus] = useState(false);
 
+  
+
   useEffect(() => {
-    
+    setPortfolio(data);
   }, []);
 
   return (
@@ -36,6 +41,18 @@ const Home = () => {
               </strong>
             </div>
 
+            <PortfolioArea>
+              {portfolio.map((portfolio, index) => (
+                <PortfolioItem
+                  style={{width:300, height:300}}
+                  key={index}
+                  data={portfolio}
+                />
+              ))}
+            </PortfolioArea>
+
+
+            
 
 
             <Modal 
@@ -43,7 +60,7 @@ const Home = () => {
               setStatus={setModalStatus}
             >
               Conteudo do Modal
-
+              
             </Modal>
 
 
