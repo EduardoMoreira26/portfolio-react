@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import background from "../../assets/background.png";
-
 export const Container = styled.div`
   max-width: 100%;
 `;
@@ -26,7 +24,7 @@ export const Content = styled.div`
     }
 
   .intro {
-    background: url(${background}) no-repeat center;
+    background: url('/assets/background.png') no-repeat center;
     background-size: cover;
     height: 550px;
     text-align: center;

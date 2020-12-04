@@ -3,7 +3,7 @@
 export  default [
 {
      title: 'Olx Clone',
-     img: '../../assets/olxbg2.png',
+    img: '/assets/courses-b7web.svg',
      description: "Projeto criado com intuito de estudos",
      url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
      site: "https://edumoreiradev.netlify.app/",
@@ -12,7 +12,7 @@ export  default [
    },
    {
      title: 'Ecoleta',
-     img: '../../assets/courses-origamid.svg',
+     img: '/assets/courses-b7web.svg',
      description: "Ecoleta criado na NLW",
      url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
      site: "https://edumoreiradev.netlify.app/",
@@ -22,7 +22,7 @@ export  default [
    },
    {
      title: 'GitHub Explorer',
-     img: '../../assets/courses-origamid.svg',
+    img: '/assets/courses-jstack.svg',
      description: "Aplicação criada no Bootcamp da rocketseat",
      url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
      site: "https://edumoreiradev.netlify.app/",
@@ -32,7 +32,7 @@ export  default [
    },
    {
     title: 'Eduardo Portoflio',
-    img: '../../assets/courses-origamid.svg',
+    img: '/assets/courses-rocket.svg',
     description: "Meu Portfolio pessoal",
     url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
     site: "https://edumoreiradev.netlify.app/",
@@ -43,7 +43,7 @@ export  default [
   
   {
     title: 'animais Fantasticos',
-    img: '../../assets/courses-origamid.svg',
+    img: '/assets/courses-b7web.svg',
     description: "Meu Portfolio pessoal",
     url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
     site: "https://edumoreiradev.netlify.app/",
@@ -53,7 +53,7 @@ export  default [
   },
   {
     title: 'Zen tecnology',
-    img: '../../assets/courses-origamid.svg',
+    img: '/assets/courses-origamid.svg',
     description: "Meu Portfolio pessoal",
     url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
     site: "https://edumoreiradev.netlify.app/",

@@ -10,6 +10,7 @@ export const Container = styled.div`
           transition: transform 0.2s;
           margin-bottom: 20px;
           cursor: pointer;
+          text-align: center;
 
           &:hover {
           transform: translatey(-10px);
@@ -38,15 +39,21 @@ export const Container = styled.div`
 `;
 
 export const ProjectPhotoArea = styled.div`
-  width: 300px;
-  height: 340px;
+  margin: 20px 2px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1f1f;
+  
 `;
 
 export const ProjectPhoto = styled.img`
-  width: 300px;
+  width: 200px;
 `;
 
 export const ProjectInfoArea = styled.div`
+  
 `;
 
 export const ProjectTitle = styled.div`
