@@ -9,7 +9,6 @@ import PortfolioItem from '../../components/PortfolioItem';
 
 import { Container, Content, Skills, Card, ContactContainer, PortfolioArea, PortfolioList } from './styles';
 
-import olxcard from "../../assets/olxcard.png";
 
 const Home = () => {
 

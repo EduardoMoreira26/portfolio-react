@@ -1,8 +1,9 @@
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export  default [
 {
      title: 'Olx Clone',
-     img: '../../assets/courses-origamid.svg',
+     img: '../../assets/olxbg2.png',
      description: "Projeto criado com intuito de estudos",
      url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
      site: "https://edumoreiradev.netlify.app/",
@@ -37,6 +38,27 @@ export  default [
     site: "https://edumoreiradev.netlify.app/",
     nameurl : "Repositório GitHub",
     tecnology : "React",
+
+  },
+  
+  {
+    title: 'animais Fantasticos',
+    img: '../../assets/courses-origamid.svg',
+    description: "Meu Portfolio pessoal",
+    url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
+    site: "https://edumoreiradev.netlify.app/",
+    nameurl : "Repositório GitHub",
+    tecnology : "React",
+
+  },
+  {
+    title: 'Zen tecnology',
+    img: '../../assets/courses-origamid.svg',
+    description: "Meu Portfolio pessoal",
+    url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
+    site: "https://edumoreiradev.netlify.app/",
+    nameurl : "Repositório GitHub",
+    tecnology : "React, Node",
 
   },
   

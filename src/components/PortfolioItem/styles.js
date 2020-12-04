@@ -9,6 +9,7 @@ export const Container = styled.div`
           background: #121214;
           transition: transform 0.2s;
           margin-bottom: 20px;
+          cursor: pointer;
 
           &:hover {
           transform: translatey(-10px);
@@ -36,11 +37,28 @@ export const Container = styled.div`
         }
 `;
 
-export const ProjectPhotoArea = styled.div``;
-export const ProjectPhoto = styled.img``;
-export const ProjectInfoArea = styled.div``;
-export const ProjectTitle = styled.div``;
-export const ProjectSite = styled.div``;
+export const ProjectPhotoArea = styled.div`
+  width: 300px;
+  height: 340px;
+`;
+
+export const ProjectPhoto = styled.img`
+  width: 300px;
+`;
+
+export const ProjectInfoArea = styled.div`
+`;
+
+export const ProjectTitle = styled.div`
+  font-size: 18px;
+`;
+
+export const ProjectSite = styled.div`
+  color: #5f5f5f;
+  margin-top: 5px;
+  font-style: italic;
+  font-weight: 500;
+`;
 
 
 
