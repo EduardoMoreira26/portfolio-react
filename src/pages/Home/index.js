@@ -7,7 +7,7 @@ import Footer from '../../components/Footer';
 import Modal from '../../components/Modal';
 import PortfolioItem from '../../components/PortfolioItem';
 
-import { Container, Content, Skills, Card, ContactContainer, PortfolioArea } from './styles';
+import { Container, Content, Skills, Card, ContactContainer, PortfolioArea, PortfolioList } from './styles';
 
 import olxcard from "../../assets/olxcard.png";
 
@@ -42,13 +42,15 @@ const Home = () => {
             </div>
 
             <PortfolioArea>
+              <PortfolioList>
               {portfolio.map((portfolio, index) => (
-                <PortfolioItem
-                  style={{width:300, height:300}}
-                  key={index}
-                  data={portfolio}
-                />
-              ))}
+                  <PortfolioItem
+                    style={{width:300, height:300}}
+                    key={index}
+                    data={portfolio}
+                  />
+                ))}
+              </PortfolioList>
             </PortfolioArea>
 
 

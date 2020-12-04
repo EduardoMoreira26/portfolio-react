@@ -21,9 +21,7 @@ const PortfolioItem = ({ data }) => {
       </ProjectPhotoArea>
       <ProjectInfoArea>
         <ProjectTitle>{data.title}</ProjectTitle>
-        <ProjectDescription>{data.description}</ProjectDescription>
-        <ProjectUrl>{data.url}</ProjectUrl>
-        <ProjectSite>{data.site}</ProjectSite>
+        <ProjectSite>{data.tecnology}</ProjectSite>
       </ProjectInfoArea>
     </Container>
   );

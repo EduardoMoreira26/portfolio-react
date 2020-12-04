@@ -7,6 +7,7 @@ export  default [
      url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
      site: "https://edumoreiradev.netlify.app/",
      nameurl : "Repositório GitHub",
+     tecnology : "React",
    },
    {
      title: 'Ecoleta',
@@ -15,6 +16,8 @@ export  default [
      url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
      site: "https://edumoreiradev.netlify.app/",
      nameurl : "Repositório GitHub",
+     tecnology : "React",
+
    },
    {
      title: 'GitHub Explorer',
@@ -23,5 +26,18 @@ export  default [
      url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
      site: "https://edumoreiradev.netlify.app/",
      nameurl : "Repositório GitHub",
+     tecnology : "React",
+
    },
+   {
+    title: 'Eduardo Portoflio',
+    img: '../../assets/courses-origamid.svg',
+    description: "Meu Portfolio pessoal",
+    url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
+    site: "https://edumoreiradev.netlify.app/",
+    nameurl : "Repositório GitHub",
+    tecnology : "React",
+
+  },
+  
  ]
