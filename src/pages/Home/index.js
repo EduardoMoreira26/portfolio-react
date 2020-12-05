@@ -6,6 +6,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Modal from '../../components/Modal';
 import PortfolioItem from '../../components/PortfolioItem';
+import ModalProject from '../../components/ModalProjet';
 
 import { Container, Content, Skills, Card, ContactContainer, PortfolioArea, PortfolioList } from './styles';
 
@@ -14,12 +15,18 @@ const Home = () => {
 
   const [portfolio, setPortfolio] = useState([]);
   const [modalStatus, setModalStatus] = useState(false);
+  const [modalData, setModalData] = useState({});
 
   
 
   useEffect(() => {
     setPortfolio(data);
   }, []);
+
+  const handleProjectClick = (data) => {
+    setModalData(data);
+    setModalStatus(true);
+  }
 
   return (
 
@@ -44,23 +51,19 @@ const Home = () => {
               <PortfolioList>
               {portfolio.map((portfolio, index) => (
                   <PortfolioItem
-                    style={{width:300, height:300}}
                     key={index}
                     data={portfolio}
+                    onClick={handleProjectClick}
                   />
                 ))}
               </PortfolioList>
             </PortfolioArea>
 
-
-            
-
-
             <Modal 
               status={modalStatus}
               setStatus={setModalStatus}
             >
-              Conteudo do Modal
+              <ModalProject data={modalData} />
               
             </Modal>
 

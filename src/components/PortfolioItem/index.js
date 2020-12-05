@@ -11,11 +11,14 @@ import {
   ProjectSite 
 } from './styles';
 
-const PortfolioItem = ({ data }) => {
+const PortfolioItem = ({ onClick, data }) => {
 
+  const handleClick = () => {
+    onClick(data);
+  }
 
   return (
-    <Container>
+    <Container onClick={handleClick}>
       <ProjectPhotoArea>
         <ProjectPhoto src={data.img} />
       </ProjectPhotoArea>

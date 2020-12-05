@@ -14,7 +14,6 @@ export const Container = styled.div`
 `;
 
 export const ModalBody = styled.div`
-  background-color: #fff;
   max-height: 90vh;
   max-width: 95vw;
   overflow: auto;
