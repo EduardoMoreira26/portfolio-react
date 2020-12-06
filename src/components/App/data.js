@@ -15,8 +15,7 @@ export  default [
      img: '/assets/courses-b7web.svg',
      description: "Ecoleta criado na NLW",
      url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
-     site: "https://edumoreiradev.netlify.app/",
-     nameurl : "Repositório GitHub",
+     site:  "https://edumoreiradev.netlify.app/",
      tecnology : "React",
 
    },
