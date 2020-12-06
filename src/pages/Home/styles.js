@@ -12,6 +12,7 @@ export const Content = styled.div`
   h1 {
     margin: 20px 10px 0 0;
     font-size: 36px;
+    text-align: center;
     
     &:after {
           content: "";
@@ -20,8 +21,9 @@ export const Content = styled.div`
           height: 3px;
           width: 20px;
           margin: 8px auto;
-        }
     }
+    
+  }
 
   .intro {
     background: url('/assets/background.png') no-repeat center;
@@ -42,7 +44,7 @@ export const Content = styled.div`
       padding-top: 150px;
       h1 {
         margin-top: 0;
-        font-size: 48px;
+        font-size: 28px;
       }
     }
   }
@@ -65,9 +67,6 @@ export const Content = styled.div`
       font-style: italic;
     }
   }
-
-
-    
 
   .section_cursos {
     display: flex;
@@ -164,7 +163,6 @@ export const ContactContainer = styled.section`
 
     @media (max-width: 700px) {
       background: #1f1f1f;
-      margin-top: 0;
       padding: 0;
 
       .container_card {
@@ -178,10 +176,10 @@ export const ContactContainer = styled.section`
 
 
 export const Skills = styled.section`
-   
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+   
 
     h1 {
     margin: 40px 10px 0 0;
@@ -194,7 +192,9 @@ export const Skills = styled.section`
       font-style: italic;
       margin: 0 20px 10px 10px;
     }
+    
     .skills {
+      
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -210,7 +210,7 @@ export const Skills = styled.section`
       .devicon-nodejs-plain,
       .devicon-react-original,
       .devicon-typescript-plain {
-        font-size: 6em;
+        font-size: 5em;
       }
       h2 {
         color: #5f5f5f;
@@ -227,9 +227,6 @@ export const Skills = styled.section`
     
     margin: 0;
 
-
-
-
     .skills {
       margin: 0;
       padding-top: 40px;
@@ -244,6 +241,12 @@ export const Skills = styled.section`
       .devicon-typescript-plain {
         font-size: 3em;
       }
+
+      h2 {
+        font-size: 14px;
+        margin: 10px 0;
+      }
+      
     }
   }
 
@@ -251,9 +254,15 @@ export const Skills = styled.section`
 `;
 
 export const Card = styled.div`
-  width: 600px;
+  width: 400px;
   height: 200px;
   text-align: center;
+
+  @media (max-width: 700px) {
+    max-width: 120px;
+    max-height: 150px;
+    
+  }
 `;
 
 export const CardCursos = styled.div`
@@ -265,9 +274,7 @@ export const CardCursos = styled.div`
   height: 300px;
   border-radius: 5px;
   background: #121214;
-  border: 3px solid #000; 
-
-  
+  border: 3px solid #000;  
 
   &:nth-child(-n+4):after {
     content: "";
@@ -316,10 +323,8 @@ export const CardCursos = styled.div`
     padding-left: 10px;
     background: #e44;
         }
-    
     }
   }
-
   
 `;
 
