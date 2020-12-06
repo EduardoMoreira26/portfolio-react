@@ -7,35 +7,68 @@ export const Container = styled.div`
   background: #1f1f1f;
   border-radius: 5px;
   padding: 0 20px;
+
+  @media (max-width: 700px) {
+    padding: 0;
+    
+  }
 `;
 
 export const ProjectArea = styled.div`
   height: 450px;
   display: flex;
- 
+
+  @media (max-width: 700px) {
+    display: block;
+    text-align: center;
+  }
 `;
 
 export const ProjectButton = styled.div`
-  height: 50px;
-  width: 50px;
-  background-color: #033;
-  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  svg {
+    color: #81c043;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: .2s;
+
+    &:hover {
+      color:#93e02f;
+    }
+  }
+
+  @media (max-width: 700px) {
+    padding-bottom: 20px ;
+    margin-top: 220px;
+  }
 `;
 
 export const ProjectPhoto = styled.img`
-  width: 200px;
+  max-width: 200px;
   margin-left: 50px;
+
+  @media (max-width: 700px) {
+    max-width: 100px;
+    margin: 10px 0 0 0;
+  }
 `;
 
 export const ProjectInfoArea = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-
   margin-left: 100px;
 
   h2 {
-    margin: 20px auto;
+    margin: 20px 0 40px 0
+  }
+
+  h3 {
+    margin-bottom: 4px;
   }
 
   p {
@@ -59,14 +92,33 @@ export const ProjectInfoArea = styled.div`
       color:#93e02f;
     }
   }
+
+  @media (max-width: 700px) {
+    flex: none;
+    display: block;
+    flex-direction: none;
+    margin-left: 0;
+
+    h2 {
+    margin: 20px 0;
+    }
+  }
 `;  
 
 export const ProjectDescription = styled.div`
-  height: 350px;
+  max-width: 800px;
+  max-height: 900px;
+  line-height: 22px;
+
+  @media (max-width: 700px) {
+    max-width: 320px;
+    max-height: 400px;
+    line-height: 22px;
+  }
 `;
 
 export const ProjectLink = styled.div`
-  height: 100px;
+  max-height: 100px;
+
 `;
 
-          

@@ -63,7 +63,7 @@ const Home = () => {
               status={modalStatus}
               setStatus={setModalStatus}
             >
-              <ModalProject data={modalData} />
+              <ModalProject data={modalData} setStatus={setModalStatus} />
               
             </Modal>
 

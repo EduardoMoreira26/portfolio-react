@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { FiXCircle } from 'react-icons/fi'
+
 import { 
   Container,
   ProjectArea,
@@ -10,8 +12,11 @@ import {
   ProjectButton
 } from './styles';
 
-const ModalProject = ({ data }) => {
+const ModalProject = ({ data, setStatus }) => {
 
+  const handleCloseButton = () => {
+    setStatus(false);
+  }
 
   return (
     <Container>
@@ -37,8 +42,8 @@ const ModalProject = ({ data }) => {
 
       </ProjectArea>
 
-      <ProjectButton>
-        X
+      <ProjectButton onClick={handleCloseButton}>
+      <FiXCircle size={44} />
       </ProjectButton>
     </Container>
   );
