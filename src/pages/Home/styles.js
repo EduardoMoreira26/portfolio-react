@@ -25,6 +25,14 @@ export const Content = styled.div`
     
   }
 
+  strong {
+      color: #5f5f5f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: italic;
+    }
+
   .intro {
     background: url('/assets/background.png') no-repeat center;
     background-size: cover;
@@ -251,6 +259,18 @@ export const Skills = styled.section`
   }
 
   
+`;
+
+export const StudyArea = styled.div`
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    background: #1f1f1f;
+    border-radius: 5px;
+
+   
 `;
 
 export const Card = styled.div`

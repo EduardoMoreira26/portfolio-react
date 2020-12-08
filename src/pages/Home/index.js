@@ -8,7 +8,19 @@ import Modal from '../../components/Modal';
 import PortfolioItem from '../../components/PortfolioItem';
 import ModalProject from '../../components/ModalProjet';
 
-import { Container, Content, Skills, Card, ContactContainer, PortfolioArea, PortfolioList } from './styles';
+import TimeLine from '../../components/TimeLine';
+
+
+import { 
+  Container, 
+  Content, 
+  Skills, 
+  Card, 
+  ContactContainer, 
+  PortfolioArea, 
+  PortfolioList,
+  StudyArea 
+} from './styles';
 
 
 const Home = () => {
@@ -68,6 +80,10 @@ const Home = () => {
             </Modal>
 
 
+
+            
+
+
           <Skills>
             <h1>SKILLS</h1>
             <strong>
@@ -124,6 +140,14 @@ const Home = () => {
           </Skills>
 
           
+          <h1>ESTUDOS</h1>
+            <strong>
+              Projetos criados ao longo dos meus estudos e que me orgulho.
+            </strong>
+         
+          <StudyArea>
+            <TimeLine />
+          </StudyArea>
 
 
           <h1>CONTATO</h1>
