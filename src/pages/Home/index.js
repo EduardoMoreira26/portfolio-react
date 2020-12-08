@@ -142,7 +142,7 @@ const Home = () => {
           
           <h1>ESTUDOS</h1>
             <strong>
-              Projetos criados ao longo dos meus estudos e que me orgulho.
+                Formação acadêmica e cursos
             </strong>
          
           <StudyArea>
