@@ -70,7 +70,7 @@ const Home = () => {
               
             </div>
 
-
+            <Fade left>
             <PortfolioArea>
               <PortfolioList>
               {portfolio.map((portfolio, index) => (
@@ -82,6 +82,8 @@ const Home = () => {
                 ))}
               </PortfolioList>
             </PortfolioArea>
+            </Fade>
+            
 
            
 
@@ -97,96 +99,102 @@ const Home = () => {
               
             </Modal>
 
-          <Skills>
-            <Fade top>
-              <h1>SKILLS</h1>
-            </Fade>
-            <Fade bottom>
-              <strong>
-                Aqui está minha tech favorita, linguagens e frameworks que estudo e
-                uso nos meus projetos.
-              </strong>
-            </Fade>
-            
-
-            <div className="skills">
-              <Card>
-                <i className="devicon-html5-plain colored" />
-                <Fade bottom>
-                  <h2>HTML5</h2>
-                </Fade>
-              </Card>
-
-              <Card>
-                <i className="devicon-css3-plain colored" />
-                <Fade bottom>
-                  <h2>CSS3</h2>
-                </Fade>
-              </Card>
-
-              <Card>
-                <i className="devicon-javascript-plain colored" />
-                <Fade bottom>
-                  <h2>Javascript</h2>
-                </Fade>
-              </Card>
-
-              <Card>
-                <i className="devicon-react-original colored" />
-                <Fade bottom>
-                  <h2>React</h2>
-                </Fade>
-              </Card>
-
-              <Card>
-                <i className="devicon-typescript-plain colored" />
-                <Fade bottom>
-                  <h2>Typescript</h2>
-                </Fade>
-              </Card>
-
-              <Card>
-                <i className="devicon-bootstrap-plain colored" />
-                <Fade bottom>
-                  <h2>Bootstrap</h2>
-                </Fade>
-              </Card>
-
-              <Card>
-                <i className="devicon-nodejs-plain colored" />
-                <Fade bottom>
-                <h2>Node</h2>
-                </Fade>
-              </Card>
-
-              <Card>
-                <i className="devicon-express-original colored" />
-                <Fade bottom>
-                  <h2>Express</h2>
-                </Fade>
-              </Card>
-
-              <Card>
-                <i className="devicon-docker-plain colored" />
-                <Fade bottom>
-                  <h2>Docker</h2>
-                </Fade>
-              </Card>
-            </div>
-          </Skills>
-
+          
           <Fade top>
-            <h1>ESTUDOS</h1>
+            <h1>SKILLS</h1>
           </Fade>
           <Fade bottom>
             <strong>
-              Formação acadêmica e cursos
+              Aqui está minha tech favorita, linguagens e frameworks que estudo e
+              uso nos meus projetos.
             </strong>
           </Fade>
-  
-          <StudyArea>
-            <TimeLine />
-          </StudyArea>
+
+          <Fade left>
+            <Skills>
+              
+              <div className="skills">
+                <Card>
+                  <i className="devicon-html5-plain colored" />
+                  <Fade bottom>
+                    <h2>HTML5</h2>
+                  </Fade>
+                </Card>
+
+                <Card>
+                  <i className="devicon-css3-plain colored" />
+                  <Fade bottom>
+                    <h2>CSS3</h2>
+                  </Fade>
+                </Card>
+
+                <Card>
+                  <i className="devicon-javascript-plain colored" />
+                  <Fade bottom>
+                    <h2>Javascript</h2>
+                  </Fade>
+                </Card>
+
+                <Card>
+                  <i className="devicon-react-original colored" />
+                  <Fade bottom>
+                    <h2>React</h2>
+                  </Fade>
+                </Card>
+
+                <Card>
+                  <i className="devicon-typescript-plain colored" />
+                  <Fade bottom>
+                    <h2>Typescript</h2>
+                  </Fade>
+                </Card>
+
+                <Card>
+                  <i className="devicon-bootstrap-plain colored" />
+                  <Fade bottom>
+                    <h2>Bootstrap</h2>
+                  </Fade>
+                </Card>
+
+                <Card>
+                  <i className="devicon-nodejs-plain colored" />
+                  <Fade bottom>
+                  <h2>Node</h2>
+                  </Fade>
+                </Card>
+
+                <Card>
+                  <i className="devicon-express-original colored" />
+                  <Fade bottom>
+                    <h2>Express</h2>
+                  </Fade>
+                </Card>
+
+                <Card>
+                  <i className="devicon-docker-plain colored" />
+                  <Fade bottom>
+                    <h2>Docker</h2>
+                  </Fade>
+                </Card>
+              </div>
+            </Skills>
+          </Fade>
+
+          <Fade top>
+              <h1>ESTUDOS</h1>
+            </Fade>
+            <Fade bottom>
+              <strong>
+                Formação acadêmica e cursos
+              </strong>
+            </Fade>
+          
+          <Fade left>
+            <StudyArea>
+              <TimeLine />
+            </StudyArea>
+          </Fade>
+          
 
           <Fade top>
             <h1>CONTATO</h1>

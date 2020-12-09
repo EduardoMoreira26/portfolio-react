@@ -31,6 +31,7 @@ export const Content = styled.div`
       align-items: center;
       justify-content: center;
       font-style: italic;
+      text-align: center;
     }
 
   .intro {
