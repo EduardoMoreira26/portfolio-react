@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Fade from 'react-reveal/Fade';
 
 import data from '../../components/App/data';
 
@@ -47,17 +48,28 @@ const Home = () => {
 
         <Content>
             <div className="intro">
-              <h1>ME CONHEÇA</h1>
-              <h3>Bem vindo ao meu Portfólio!</h3>
+              <Fade top>
+                <h1>ME CONHEÇA</h1>
+              </Fade>
+              <Fade bottom>
+                <h3>Bem vindo ao meu Portfólio!</h3>
+              </Fade>
+
             </div>
 
 
             <div className="titleProjetos">
-            <h1>PROJETOS</h1>
+            <Fade top>
+              <h1>PROJETOS</h1>
+            </Fade>
+            <Fade bottom>
               <strong>
                 Projetos criados ao longo dos meus estudos e que me orgulho.
               </strong>
+            </Fade>
+              
             </div>
+
 
             <PortfolioArea>
               <PortfolioList>
@@ -71,99 +83,138 @@ const Home = () => {
               </PortfolioList>
             </PortfolioArea>
 
+           
+
+
             <Modal 
               status={modalStatus}
               setStatus={setModalStatus}
             >
-              <ModalProject data={modalData} setStatus={setModalStatus} />
+              <Fade top>
+                <ModalProject data={modalData} setStatus={setModalStatus} />
+
+              </Fade>
               
             </Modal>
 
-
-
-            
-
-
           <Skills>
-            <h1>SKILLS</h1>
-            <strong>
-              Aqui está minha tech favorita, linguagens e frameworks que estudo e
-              uso nos meus projetos.
-            </strong>
+            <Fade top>
+              <h1>SKILLS</h1>
+            </Fade>
+            <Fade bottom>
+              <strong>
+                Aqui está minha tech favorita, linguagens e frameworks que estudo e
+                uso nos meus projetos.
+              </strong>
+            </Fade>
+            
 
             <div className="skills">
               <Card>
                 <i className="devicon-html5-plain colored" />
-                <h2>HTML5</h2>
+                <Fade bottom>
+                  <h2>HTML5</h2>
+                </Fade>
               </Card>
 
               <Card>
                 <i className="devicon-css3-plain colored" />
-                <h2>CSS3</h2>
+                <Fade bottom>
+                  <h2>CSS3</h2>
+                </Fade>
               </Card>
 
               <Card>
                 <i className="devicon-javascript-plain colored" />
-                <h2>Javascript</h2>
+                <Fade bottom>
+                  <h2>Javascript</h2>
+                </Fade>
               </Card>
 
               <Card>
                 <i className="devicon-react-original colored" />
-                <h2>React</h2>
+                <Fade bottom>
+                  <h2>React</h2>
+                </Fade>
               </Card>
 
               <Card>
                 <i className="devicon-typescript-plain colored" />
-                <h2>Typescript</h2>
+                <Fade bottom>
+                  <h2>Typescript</h2>
+                </Fade>
               </Card>
 
               <Card>
                 <i className="devicon-bootstrap-plain colored" />
-                <h2>Bootstrap</h2>
+                <Fade bottom>
+                  <h2>Bootstrap</h2>
+                </Fade>
               </Card>
 
               <Card>
                 <i className="devicon-nodejs-plain colored" />
+                <Fade bottom>
                 <h2>Node</h2>
+                </Fade>
               </Card>
 
               <Card>
                 <i className="devicon-express-original colored" />
-                <h2>Express</h2>
+                <Fade bottom>
+                  <h2>Express</h2>
+                </Fade>
               </Card>
 
               <Card>
                 <i className="devicon-docker-plain colored" />
-                <h2>Docker</h2>
+                <Fade bottom>
+                  <h2>Docker</h2>
+                </Fade>
               </Card>
             </div>
           </Skills>
 
-          
-          <h1>ESTUDOS</h1>
+          <Fade top>
+            <h1>ESTUDOS</h1>
+          </Fade>
+          <Fade bottom>
             <strong>
-                Formação acadêmica e cursos
+              Formação acadêmica e cursos
             </strong>
-         
+          </Fade>
+  
           <StudyArea>
             <TimeLine />
           </StudyArea>
 
-
-          <h1>CONTATO</h1>
+          <Fade top>
+            <h1>CONTATO</h1>
+          </Fade>
           <ContactContainer>
             <div className="container_card">
               <div className="contact_card">
-                <h2>Telefone</h2> <br />
+
+                <Fade left>
+                  <h2>Telefone</h2>
+                </Fade>
+                <br />
                   <a href="tel:+351934854234">934854234</a>
               </div>
 
               <div className="contact_card">
-                <h2>Email</h2> <br /> <strong>du_du.mba@hotmail.com</strong>
+                <Fade top>
+                  <h2>Email</h2>
+                </Fade>
+
+                <br /> 
+                <strong>du_du.mba@hotmail.com</strong>
               </div>
 
               <div className="contact_card">
-                <h2>Redes Sociais</h2>
+                <Fade right>
+                  <h2>Redes Sociais</h2>
+                </Fade>
                   <br />
                   <a
                     href="https://www.linkedin.com/in/eduardo-moreira-944413151/"
