@@ -41,24 +41,21 @@ export  default [
   },
   
   {
-    title: 'animais Fantasticos',
+    title: 'FlexBlog',
     img: '/assets/courses-b7web.svg',
-    description: "Meu Portfolio pessoal",
-    url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
+    description: "Aplicação criada com intuito de colocar em prática os estudos de CSS Flexbox, ferramenta muito prática que trás de forma simples e prática uma responsividade para o projeto.",
+    url: "https://github.com/EduardoMoreira26/FlexBlog",
     site: "https://edumoreiradev.netlify.app/",
-    nameurl : "Repositório GitHub",
-    tecnology : "React",
+    tecnology : "HTML, CSS Flexbox",
 
   },
   {
-    title: 'Zen tecnology',
+    title: 'Bikcraft',
     img: '/assets/courses-origamid.svg',
-    description: "Meu Portfolio pessoal",
-    url: "https://github.com/EduardoMoreira26/FrontEnd-OLX",
-    site: "https://edumoreiradev.netlify.app/",
-    nameurl : "Repositório GitHub",
-    tecnology : "React, Node",
-
+    description: "Projeto desenvolvido no curso de Web Design da Plataforma de ensino Origamid. Site criado com HTML, CSS e JS.",
+    url: "https://github.com/EduardoMoreira26/Bikcraft",
+    site: "https://sitebike.netlify.app/",
+    tecnology : "HTML, CSS & JS",
   },
   
  ]

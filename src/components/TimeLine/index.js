@@ -13,6 +13,9 @@ import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 
+import CircularProgress from '@material-ui/core/CircularProgress';
+
+
 const useStyles = makeStyles((theme) => ({
   paper: {
     padding: '40px 16px',
@@ -32,6 +35,42 @@ export default function CustomizedTimeline() {
   return (
     <Timeline align="alternate">
 
+        <TimelineItem  imelineItem>
+          <TimelineOppositeContent>
+          <Typography variant="body2" color="#fff">
+              Evoluindo...
+            </Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot color="inherit">
+              <CircularProgress />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+              <div style={{height: 150}}></div>
+          </TimelineContent>
+        </TimelineItem>
+
+        <TimelineItem>
+          <TimelineOppositeContent>
+          <Typography variant="body2" color="#fff">
+              2019 / Atual
+            </Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot color="inherit">
+              <AccountBalanceIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Paper elevation={3} className={classes.paper}>
+            {/* <img width={150} src="/assets/courses-jstack.svg" alt=""/> */}
+              <Typography>Instituto Politécnico do Cávado e Ave - Engenharia em Sistemas Informáticos</Typography>
+            </Paper>
+          </TimelineContent>
+        </TimelineItem>
 
         <TimelineItem>
         <TimelineOppositeContent>
@@ -54,8 +93,6 @@ export default function CustomizedTimeline() {
       </TimelineItem>
 
       <TimelineItem>
-
-
         <TimelineOppositeContent>
         <Typography variant="body2" color="#fff">
             2020 / Atual
@@ -117,10 +154,6 @@ export default function CustomizedTimeline() {
           </Paper>
         </TimelineContent>
       </TimelineItem>
-
-     
-
-     
 
       <TimelineItem>
         <TimelineOppositeContent>
