@@ -110,6 +110,10 @@ export const ProjectDescription = styled.div`
   max-height: 900px;
   line-height: 22px;
 
+  p {
+    margin: 15px 0;
+  }
+
   @media (max-width: 700px) {
     max-width: 320px;
     max-height: 400px;

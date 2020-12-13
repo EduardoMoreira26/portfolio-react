@@ -66,7 +66,6 @@ export default function CustomizedTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
-            {/* <img width={150} src="/assets/courses-jstack.svg" alt=""/> */}
               <Typography>Instituto Politécnico do Cávado e Ave - Engenharia em Sistemas Informáticos</Typography>
             </Paper>
           </TimelineContent>
@@ -86,7 +85,6 @@ export default function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-          {/* <img width={150} src="/assets/courses-rocket.svg" alt=""/> */}
             <Typography>Bootcamp Gostack 11 - Rocketseat</Typography>
           </Paper>
         </TimelineContent>
@@ -106,7 +104,6 @@ export default function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-          {/* <img width={150} src="/assets/courses-jstack.svg" alt=""/> */}
             <Typography>Bootcamp imersivo Plataforma JSTACK</Typography>
           </Paper>
         </TimelineContent>
@@ -126,7 +123,6 @@ export default function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-          {/* <img width={120} src="/assets/courses-origamid.svg" alt=""/> */}
             <Typography>Plataforma Origamid</Typography>
           </Paper>
         </TimelineContent>
@@ -149,7 +145,6 @@ export default function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-          {/* <img width={80} src="/assets/courses-b7web.svg" alt=""/> */}
             <Typography>Plataforma B7WEB</Typography>
           </Paper>
         </TimelineContent>
@@ -169,7 +164,6 @@ export default function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-          {/* <img width={120} src="" alt=""/> */}
             <Typography>Faculdade Pitágoras de Uberlândia - Bacharel em Contabilidade</Typography>
           </Paper>
         </TimelineContent>
@@ -188,7 +182,6 @@ export default function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-              {/* <img width={80} src="" alt=""/> */}
             <Typography padding={10}>BitCompany - Técnico em Informática</Typography>
           </Paper>
         </TimelineContent>

@@ -176,6 +176,14 @@ const Home = () => {
                     <h2>Docker</h2>
                   </Fade>
                 </Card>
+
+                <Card>
+                  <i class="devicon-git-plain colored"/>
+                  <Fade bottom>
+                    <h2>Git</h2>
+                  </Fade>
+                </Card>
+                
               </div>
             </Skills>
           </Fade>

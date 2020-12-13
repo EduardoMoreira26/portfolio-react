@@ -21,7 +21,7 @@ const ModalProject = ({ data, setStatus }) => {
   return (
     <Container>
       <ProjectArea>
-        <ProjectPhoto src={data.img} />
+        <ProjectPhoto src={data.imgmodal} />
 
         <ProjectInfoArea>
           <h2>{data.title}</h2>
@@ -31,12 +31,13 @@ const ModalProject = ({ data, setStatus }) => {
           <ProjectDescription>
             <h3>Descrição do projeto:</h3>
             <p>{data.description}</p>
+            <p>{data.descriptiontools}</p>
           </ProjectDescription>
           <ProjectLink>
             <h3>Link:</h3>
-            <a target='blank' href={data.url}>Repositório Github</a>
+            <a target='blank' href={data.url} alt="Repositorio github">Repositório Github</a>
             <br/>
-            <a target='blank' href={data.site}>{data.site}</a>
+            <a target='blank' href={data.site} alt="Site do projeto">{data.site}</a>
           </ProjectLink>
         </ProjectInfoArea>
 

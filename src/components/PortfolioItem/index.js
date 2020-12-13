@@ -5,9 +5,7 @@ import {
   ProjectPhotoArea, 
   ProjectPhoto, 
   ProjectInfoArea, 
-  ProjectTitle, 
-  ProjectDescription, 
-  ProjectUrl, 
+  ProjectTitle,  
   ProjectSite 
 } from './styles';
 
@@ -20,7 +18,7 @@ const PortfolioItem = ({ onClick, data }) => {
   return (
     <Container onClick={handleClick}>
       <ProjectPhotoArea>
-        <ProjectPhoto src={data.img} />
+        <ProjectPhoto src={data.img} alt="Imagem Projeto" />
       </ProjectPhotoArea>
       <ProjectInfoArea>
         <ProjectTitle>{data.title}</ProjectTitle>

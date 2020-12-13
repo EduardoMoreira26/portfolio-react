@@ -218,7 +218,8 @@ export const Skills = styled.section`
       .devicon-javascript-plain,
       .devicon-nodejs-plain,
       .devicon-react-original,
-      .devicon-typescript-plain {
+      .devicon-typescript-plain,
+      .devicon-git-plain {
         font-size: 5em;
       }
       h2 {
@@ -247,7 +248,8 @@ export const Skills = styled.section`
       .devicon-javascript-plain,
       .devicon-nodejs-plain,
       .devicon-react-original,
-      .devicon-typescript-plain {
+      .devicon-typescript-plain,
+      .devicon-git-plain {
         font-size: 3em;
       }
 
